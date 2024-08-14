@@ -6,7 +6,7 @@ app = Flask (__name__)
 @app.route ('/<name>/')
 def hello (name='незнакомец'):
     return f'Привет, {name.capitalize()}!!!'
-
+# Возвращает имя пользователя с заглавной буквы 
 
 if __name__ == '__main__':
     app.run (debug=True)
